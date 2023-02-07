@@ -10,3 +10,15 @@ function mindGame(number) {
       return "Please enter a positive number!";
     return (number * 3 + 10) / 2 - 5;
   }
+
+
+  // Problem 2
+// This function takes in a string only and then counts the number of characters in it and returns even if the number is even or returns odd if the number is odd.
+function evenOdd(word) {
+    const type = typeof word;
+    //This line checks for empty parameter as well.
+    if (type !== "string" || word.length === 0) return "Please enter a word!";
+  
+    if (word.length % 2 === 0) return "Even";
+    else return "Odd";
+  }
